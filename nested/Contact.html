@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Craven Photographies Website</title>
+        <link rel="stylesheet" href="/all CSS/style5.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    </head>
+    
+<body>
+    
+    <div id="preloader"></div>
+    
+    <a href="/landing/landing.html" id="button">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper grid">
+                    <div class="branding">
+                        <h2>arg<span class="highlight">Bee</span></h2>
+                        <p>Photography</p>
+                        <a target="_blank" href="https://www.facebook.com/argbeephotography"><img title="Argbee Photography (Photography partner)" src="/other/logo.png"></a>
+                    </div>
+                    <div class="toggle__icon">
+                        <a href="#"><i class="fa fa-bars"></i></a>
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/nested/Gallery.html">Gallery</a></li>
+                            <li><a href="/nested/Portfolio.html">Portfolio</a></li>
+                            <li><a href="/nested/me.html">About Me</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+    <div class="banner">
+        <div class="banner__content">
+            <form method="post">
+                <h3>Let's Connect!</h3>
+                <input type="text" placeholder="Name" id="name" autocomplete="off">
+                <input type="email" placeholder="Email" id="email" autocomplete="off">
+                <input type="text" placeholder="Subject" id="subject"  autocomplete="off">
+                <textarea id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                <button id="btn">Send</button>
+            </form>
+        </div>
+        
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            var btn = document.getElementById('btn');
+            btn.addEventListener('click', function(e) {
+                e.preventDefault()
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var subject = document.getElementById('subject').value;
+                var message = document.getElementById('message').value;  
+                
+                var body = 'name: ' +name + '<br/> email: ' + email + '<br/> subject: ' +subject + '<br/> message: '+ message; 
+               
+            Email.send({
+                SecureToken : "4e5bc990-b30b-45c6-9b5b-c1344576de26",
+                To : 'apitongYT@gmail.com',
+                From : "montalbncravenkiek@gmail.com",
+                Subject : "contact message",
+                Body : body
+            }).then(
+            message => alert(message)
+            );
+            
+            }
+        </script>
+        
+    </div>
+    
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper grid">
+                <div class="footer__box">
+                    <h3>craven<span class="highlight">.montalban</span></h3>
+                    
+                    <p>Purok 10, Apitong Extension, Old Cabalan, Olongapo City, Zambales 2200</p>
+                    <a href="#">montalbncravenkiek@gmail.com</a>
+                    
+                    <ul class="social__media">
+                        <li><a target="_blank" href="https://www.facebook.com/crvnpitiks"><i class="fab fa-facebook"></i></a></li>
+                        
+                        <li><a target="_blank" href="https://www.instagram.com/crvn.alvrz"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__box">
+                    <h3 class="footer__header">Useful Link</h3>
+                    
+                    <ul>
+                        <li><a href="/Portfolio/Portfolio.html">Portfolio</a></li>
+                        <li><a href="/Me/me.html">About</a></li>
+                        <li><a href="/Contact/Contact.html">Contact</a></li>
+                    </ul>                    
+                </div>
+                
+                <div class="footer__box">
+                    <div>
+                        <img src="/other/mainlogo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle__icon');
+        const nav = document.querySelector('nav');
+        
+        toggleBtn.addEventListener('click', () => nav.classList.toggle('open'))
+    </script>
+
+    <script>
+      var load = document.getElementById("preloader");
+      window.addEventListener("load", function(){
+          load.style.display = "none";
+      })
+  </script>
+    
+    </body>
+</html>
