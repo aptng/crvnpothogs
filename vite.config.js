@@ -1,16 +1,17 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
+const nested = resolve(__dirname, 'nested')
 export default defineConfig({
+  nested, 
   build: {
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        nested: resolve(__dirname, '/nested/Contact.html'),
-        nested: resolve(__dirname, '/nested/Gallery.html'),
-        nested: resolve(__dirname, '/nested/landing.html'),
-        nested: resolve(__dirname, '/nested/me.html'),
-        nested: resolve(__dirname, '/nested/Portfolio.html'),
+        me: resolve(nested, 'me.html'),
+        landing: resolve(nested, 'landing.html'),
+        gallery: resolve(nested, 'Gallery.html'),
+        portfolio: resolve(nested, 'Portfolio.html'),
       },
     },
   },
