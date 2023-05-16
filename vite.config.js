@@ -11,6 +11,7 @@ export default defineConfig({
         me: resolve(nested, 'me.html'),
         landing: resolve(nested, 'landing.html'),
         gallery: resolve(nested, 'Gallery.html'),
+        contact: resolve(nested, 'Contact.html'),
         portfolio: resolve(nested, 'Portfolio.html'),
       },
     },
