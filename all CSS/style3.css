@@ -317,6 +317,119 @@ body {
 }
 /* Header4 */
 
+
+
+
+
+.btn3 {
+    border: none;
+    outline: none;
+    margin-top: 500rem;
+    margin: 10px; 
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--light);
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    border: solid 2px var(--primary);
+}
+
+.btn3:hover {
+    background: var(--primary);
+    border: solid 2px var(--dark);
+}
+
+
+
+
+
+
+
+
+/* Image Desc */
+.intro {
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 21.2rem;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.intro h1{
+    margin: 10px;
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.intro p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.intro2 {
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 12.2em;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.intro2 h1{
+    margin: 10px;
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.intro2 p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.intro3 {
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 18.2rem;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.intro3 h1{
+    margin: 10px;
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.intro3 p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.intro4 {
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 17.2rem;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.intro4 h1{
+    margin: 10px;
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.intro4 p {
+    font-weight: bold;
+    text-align: center;
+}
+/* End-Image Desc */
+
 /* gallery */
 
 .portfolio {
